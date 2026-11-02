@@ -6,6 +6,6 @@ def light_spell_record(spell_name: str, ingredients: str) -> str:
     from .light_validator import validate_ingredients
 
     validation = validate_ingredients(ingredients)
-    if "INVALİD" in validation:
+    if "INVALID" in validation:
         return f"Spell rejected: {spell_name} {validation}"
     return f"Spell recorded: {spell_name} {validation}"
